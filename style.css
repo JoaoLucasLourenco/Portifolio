@@ -46,6 +46,10 @@ body{
   justify-content: center;
   align-items: center;
   position: absolute;
+  animation: luz_acendendo_btn;
+  animation: luz_apagando_btn;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
 }
 .btn:hover{
   background-color: #BAE8C7;
@@ -53,6 +57,7 @@ body{
   transition:all;
   transition-duration: 0.5s;
   transform: translateY(-5px);
+  animation: none;
 }
 #a-port{
   text-decoration: none;
@@ -77,8 +82,13 @@ body{
 }
 .icons{
   text-decoration: none;
-  color: #706565;
+  color: #5E7564;
+  border-radius: 50%;
   transition-duration: 0.4s;
+  animation: luz_acnd_icon;
+  animation: luz_apgn_icon;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
 }
 .icons:hover{
   color:#A19191;
@@ -87,4 +97,24 @@ body{
 }
 abbr{
   text-decoration: none;
+}
+.content{
+  width: 100%;
+  height: 100%;
+}
+@keyframes luz_acendendo_btn {
+  0%{box-shadow: 0;}
+  100%{box-shadow: 1px 1px 15px 5px grey;}
+}
+@keyframes luz_apagando_btn {
+  50%{box-shadow: 1px 1px 10px 2px grey;}
+  0%{box-shadow: 0;}
+}
+@keyframes luz_acnd_icon {
+  0%{box-shadow:0;}
+  100%{box-shadow: 1px 1px 20px 5px white;}
+}
+@keyframes luz_apgn_icon {
+  50%{box-shadow: 1px 1px 20px 5px white;}
+  0%{box-shadow: 0;}
 }
