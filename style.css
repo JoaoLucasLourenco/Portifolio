@@ -1,7 +1,7 @@
 body{
   font-family: sans-serif;
-  margin: 0;
-  background: radial-gradient(circle, #fff,#000);
+  margin:0;
+  background-color: #fff;
 }
 .header-box{
   width: 370px;
@@ -28,6 +28,7 @@ body{
   font-weight: bold;
 }
 .header{
+  background: radial-gradient(circle, #E7F5FD,#000 92%);
   height: 100vh;
   width:100vw;
   display:flex;
@@ -36,7 +37,7 @@ body{
   align-items: center;
 }
 .btn{
-  background-color: #5E7564;
+  background-color: #32B3B0;
   width:100px;
   height:45px;
   border-radius: 15px;
@@ -52,12 +53,12 @@ body{
   animation-iteration-count: infinite;
 }
 .btn:hover{
-  background-color: #BAE8C7;
+  background-color: #FFE8B8;
   color:#4F4F4F;
   transition:all;
   transition-duration: 0.5s;
   transform: translateY(-5px);
-  animation: none;
+  animation:none;
 }
 #a-port{
   text-decoration: none;
@@ -72,17 +73,9 @@ body{
   transform: translateY(-5px);
   transition-duration: 0.5s;
 }
-#gh-icon:hover{
-  transform: translateY(-5px);
-  transition-duration: 0.5s;
-}
-#cv-icon:hover{
-  transform: translateY(-5px);
-  transition-duration: 0.5s;
-}
 .icons{
   text-decoration: none;
-  color: #5E7564;
+  color: #32B3B0;
   border-radius: 50%;
   transition-duration: 0.4s;
   animation: luz_acnd_icon;
@@ -91,23 +84,101 @@ body{
   animation-iteration-count: infinite;
 }
 .icons:hover{
-  color:#A19191;
+  color:#FFE8B8;
   transform: translateY(-5px);
   transition-duration: 0.4s;
+}
+#icon-cv{
+  animation-delay: 0s;
+}
+#icon-gh{
+  animation-delay: 250ms;
+}
+#icon-lk{
+  animation-delay: 500ms;
 }
 abbr{
   text-decoration: none;
 }
+
+/*Content*/
 .content{
   width: 100%;
   height: 100%;
+  min-height: 100vh;
+  margin: 0;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background: radial-gradient(circle,#EDBF2B,#EDA52B);
 }
+.content-box{
+  width: 350px;
+  height: 350px;
+  min-height: 350px;
+  min-width: 350px;
+  border-radius: 30px;
+  margin:100px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ebcea0;/*#FFF2B8*/
+}
+.content-box img{
+  max-width: 300px;
+  max-height: 300px;
+  min-width: 300px;
+  min-height: 300px;
+  margin: 0;
+}
+.content-box h3{
+  margin: 0;
+  width: 50%;
+  background-color: #745C9E;
+  text-align: center;
+  border-radius: 5px;
+  color:#E7F5FD;
+  user-select: none;
+}
+.saiba-mais{
+  background-color: #745C9E;
+  margin: 0;
+  position: relative;
+  right: -100px;
+  padding: 5px;
+  border-radius: 35px;
+  width: 100px;height: 40px;
+  text-align: center;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all;
+  transition-duration: 0.4s;
+  color: #E7F5FD;
+}
+.saiba-mais a{text-decoration: none;
+color: #E7F5FD;
+transition: all;
+transition-duration: 0.4s;}
+.saiba-mais:hover{
+  transform: translateY(-7px);
+  background-color: #ABEBCF;
+  color: #565C5F;
+}
+.saiba-mais a:hover{
+  color: #565C5F;
+}
+/*Animações*/
 @keyframes luz_acendendo_btn {
-  0%{box-shadow: 0;}
-  100%{box-shadow: 1px 1px 15px 5px grey;}
+  0%{box-shadow:0;}
+  100%{box-shadow: 1px 1px 20px 5px white;}
 }
 @keyframes luz_apagando_btn {
-  50%{box-shadow: 1px 1px 10px 2px grey;}
+  50%{box-shadow: 1px 1px 15px 2px white;}
   0%{box-shadow: 0;}
 }
 @keyframes luz_acnd_icon {
@@ -115,6 +186,6 @@ abbr{
   100%{box-shadow: 1px 1px 20px 5px white;}
 }
 @keyframes luz_apgn_icon {
-  50%{box-shadow: 1px 1px 20px 5px white;}
+  50%{box-shadow: 1px 1px 15px 2px white;}
   0%{box-shadow: 0;}
 }
