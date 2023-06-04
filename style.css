@@ -127,7 +127,8 @@ abbr{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #ebcea0;/*#FFF2B8*/
+  background-color: #ebcea0;
+  box-shadow: 0px 1px 20px 5px #664712;
 }
 .content-box img{
   max-width: 300px;
@@ -144,12 +145,15 @@ abbr{
   border-radius: 5px;
   color:#E7F5FD;
   user-select: none;
+  position: relative;
+  top:15px;
 }
 .saiba-mais{
   background-color: #745C9E;
   margin: 0;
   position: relative;
   right: -100px;
+  top:-10px;
   padding: 5px;
   border-radius: 35px;
   width: 100px;height: 40px;
@@ -165,13 +169,39 @@ abbr{
 .saiba-mais a{text-decoration: none;
 color: #E7F5FD;
 transition: all;
-transition-duration: 0.4s;}
+transition-duration: 0.4s;
+width: 100%;
+}
 .saiba-mais:hover{
   transform: translateY(-7px);
   background-color: #ABEBCF;
   color: #565C5F;
 }
 .saiba-mais a:hover{
+  color: #565C5F;
+}
+.info{
+  background-color: #745C9E;
+  border-radius: 50%;
+  width: 30px;
+  min-height: 30px;
+  color: #E7F5FD;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  right: -130px;
+  top:70px;
+  user-select: none;
+  cursor: pointer;
+  transition: all;
+  transition-duration: 0.2s;
+}
+.info:hover{
+  background-color: #ABEBCF;
+  transform: translateY(-7px);
+  transition-duration: 0.2s;
   color: #565C5F;
 }
 /*Animações*/
