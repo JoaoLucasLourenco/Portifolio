@@ -14,11 +14,11 @@ body{
   align-items: center;
 }
 .header-box{
-  width: 370px;
   min-width: 370px;
   max-width: 370px;
   user-select: none;
 }
+
 .header-box h1{
   font-size: 60px;
   max-width:370px;
@@ -196,12 +196,12 @@ width: 100%;
   user-select: none;
   cursor: pointer;
   transition: all;
-  transition-duration: 0.2s;
+  transition-duration: 0.4s;
 }
 .info:hover{
   background-color: #ABEBCF;
   transform: translateY(-7px);
-  transition-duration: 0.2s;
+  transition-duration: 0.4s;
   color: #565C5F;
 }
 /*Animações*/
